@@ -1,0 +1,12 @@
+#log configuraion
+logging:
+  level:
+    root: INFO
+  config: classpath:logback-local.xml
+
+#document configuration
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
