@@ -31,10 +31,6 @@ public interface CodeConversion<T> {
      */
     static <T, E extends Enum<?> & CodeConversion<T>> E fromCode(T code, Class<E> targetType, boolean nullable) {
         Objects.requireNonNull(code);
-        Objects.requireNonNull(code);
-        if (!targetType.isEnum()) {
-            throw new RuntimeException(targetType.getName() + " is not enum.");
-        }
         for (E item : targetType.getEnumConstants()) {
             if (item.toCode().equals(code)) {
                 return item;
