@@ -13,7 +13,7 @@ import org.springframework.util.MultiValueMap;
 
 @SpringBootTest
 @AutoConfigureMockMvc
-public class ParamValidationTest {
+public class ParameterValidationTest {
 
     @Autowired
     private MockMvc mockMvc;
