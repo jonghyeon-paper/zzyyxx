@@ -17,14 +17,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class AppsExceptionHandler {
 
     /**
-     * handleBusinessException:
+     * handleUnknownException:
      * 
      * @param exception
      * @return
      */
     @ExceptionHandler(RuntimeException.class)
     @ResponseBody
-    public ResponseEntity<SimpleFailureResponseModel> handleBusinessException(RuntimeException exception) {
+    public ResponseEntity<SimpleFailureResponseModel> handleUnknownException(RuntimeException exception) {
         AppsResponse respnose = AppsResponse.FAILURE_UNKNOWN;
         return ResponseEntity.status(respnose.getHttpStatus()).body(SimpleFailureResponseModel
                 .of(respnose.getExtraCode(), respnose.getExtraText() + ":\n" + exception.getMessage()));
