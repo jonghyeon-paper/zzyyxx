@@ -38,7 +38,7 @@ public class BusinessException extends RuntimeException implements SimpleRespons
     }
 
     @Override
-    public String getExtraMessage() {
-        return simpleResponse.getExtraMessage();
+    public String getExtraText() {
+        return simpleResponse.getExtraText();
     }
 }
