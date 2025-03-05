@@ -4,7 +4,7 @@ import lombok.Data;
 import zz.yy.xx.core.attribute.SimpleResponse;
 
 /**
- * ApiResponseResultWrapper:
+ * OthersResponseWrapper:
  * 
  * <br>
  * created by good on 2025.03.
