@@ -10,7 +10,7 @@ package zz.yy.xx.exception;
 public interface SelfConsumer {
 
     /**
-     * no input, no output.
+     * run: no input, no output.
      */
     void run();
 }
