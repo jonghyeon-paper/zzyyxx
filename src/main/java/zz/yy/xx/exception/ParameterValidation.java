@@ -9,7 +9,7 @@ package zz.yy.xx.exception;
 public interface ParameterValidation {
 
     /**
-     * verify parameters
+     * isValid: verify parameters
      * 
      * @param throwable 
      * @return 
@@ -17,7 +17,7 @@ public interface ParameterValidation {
     boolean isValid(boolean throwable);
 
     /**
-     * verify parameters
+     * isValid: verify parameters
      * 
      * @param throwable if 'true', {@link ParameterException} throw. if 'false',
      *                  return boolean.
