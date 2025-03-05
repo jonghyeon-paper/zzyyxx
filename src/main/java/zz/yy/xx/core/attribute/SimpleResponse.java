@@ -32,9 +32,9 @@ public interface SimpleResponse {
     String getExtraCode();
 
     /**
-     * getExtraMessage:
+     * getExtraText:
      * 
      * @return
      */
-    String getExtraMessage();
+    String getExtraText();
 }
