@@ -13,7 +13,7 @@ import java.util.Objects;
 public interface CodeConversion<T> {
 
     /**
-     * code(or value) return
+     * toCode: code(or value) return
      * 
      * @return <code>T</code>
      */
